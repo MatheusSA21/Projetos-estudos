@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudo</title>
+    <link rel="stylesheet" href="estudo.css">
+</head>
+
+<body>
+    <main>
+        <h1 class="titulo">Oque deseja estudar?</h1><br><br><br><br>
+
+
+
+        <div class="botoes">
+            <a class="botoes__link" href="https://www.alura.com.br/artigos/css-guia-do-flexbox"> FlexBox</a>
+            <a class="botoes__link" href="https://www.alura.com.br/artigos/css-border-estilizando-bordas-elementos-css">
+                CSS Border</a>
+            <a class="botoes__link" href="https://www.w3schools.com/css/css_boxmodel.asp"> Box Model CSS</a>
+            <a class="botoes__link" href="https://www.alura.com.br/artigos/css-guia-do-flexbox"> FlexBox</a>
+            <a class="botoes__link" href="https://www.w3schools.com/cssref/sel_hover.php"> CSS Hover</a>
+        </div>
+    </main>
+
+
+</body>
+
+</html>
+
+
+
+<script>
+    //alert("Bem-vindo(a) ao programa de estudo")
+
+</script>
+
+
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+
+        box-sizing: border-box;
+        height: 100vh;
+        background-color: rgb(51, 1, 86);
+        color: rgb(255, 255, 255);
+
+    }
+
+    .titulo {
+        display: flex;
+        align-items: center;
+        margin-left: 40%;
+        width: 300px;
+        border: 15px inset rgb(0, 123, 255);
+        box-shadow: 10px 20px rgb(1, 75, 125);
+
+    }
+
+    .exibicao {
+        display: flex;
+        align-items: flex-end;
+        margin: 100px 50px;
+    }
+
+    .botoes {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        justify-content: space-between;
+    }
+
+    .botoes__link {
+        text-decoration: none;
+        background-color: cadetblue;
+        color: black;
+        font-size: x-large;
+        width: 200px;
+        height: 50px;
+        border-radius: 20px;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+    }
+</style>
