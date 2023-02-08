@@ -1,0 +1,36 @@
+<meta charset="UTF-8">
+<h3>Calculando o seu IMC, Índice de Massa Corporal</h3>
+<script>
+    function pulalinha() {
+        document.write("<br><hr>")
+
+
+    }
+    function mostra(frase) {
+        document.write(frase);
+        pulalinha();
+
+    }
+    function calculaimc(peso, altura) {
+        //imc = altura x altura/peso
+        return peso / (altura * altura);
+    }
+    var nomedado = prompt("Seu nome")
+    var alturadada = prompt(nomedado + ", Sua altura porfavor")
+    var pesodado = prompt(nomedado + ", Seu peso porfavor")
+    var imc = calculaimc(pesodado, alturadada)
+
+    document.write(nomedado + "<big>, o seu imc é: </big> " + (imc))
+    pulalinha()
+
+    if (imc < 18.5) {
+        mostra("Seu imc, de acordo com a OMS,está abaixo do recomendado, já que esta menor que 18.5")
+    }
+    if (imc > 35) {
+        mostra("Seu imc, de acordo com a OMS, esta acima do recomendado, já que esta maior que 35")
+    }
+    if (imc <= 35 && imc >= 18.5) {
+        mostra("Seu imc, de acordo com a OMS, esta no recomendado, já que esta entre 18.5 e 35, Parabéns ")
+    }
+
+</script>

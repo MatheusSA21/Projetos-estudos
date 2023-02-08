@@ -1,0 +1,24 @@
+<meta charset="UTF-8">
+
+<h3>Tabuada</h3>
+<script>
+    function pulaLinha() {
+
+        document.write("<br><hr>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var multiplicador = 0
+    var multiplicado = parseInt(prompt("De qual número você quer ver a tabuada"))
+
+    while (multiplicador <= 10) {
+        mostra(multiplicado * multiplicador)
+        multiplicador++
+    }
+    mostra("Essa é a tabuada do " + multiplicado)
+
+</script>

@@ -1,0 +1,35 @@
+<meta charset="UTF-8">
+<h3>Pontos do time, Parseint, if e prompt</h3>
+<script>
+    function pulalinha() {
+        document.write("<br><hr>")
+
+
+    }
+    function mostra(frase) {
+        document.write(frase);
+        pulalinha();
+    }
+
+
+    var vitorias = parseInt(prompt("Qual o número de vitórias ? "))
+    var empates = parseInt(prompt("Qual o número de empates?"));
+
+    var pontos = vitorias * 3 + empates
+    mostra("O seu time tem um total de pontos de: " + pontos)
+
+    if (pontos > 28) {
+
+        mostra("Seu time esta com a pontuaçãoo melhor que o ano passado, ja que seu time fez mais que 28 na última temporada")
+    }
+    if (pontos < 28) {
+        mostra("Seu time esta com a pontuação pior que o ano passado, ja que seu time fez menos que 28 na última temporada")
+    }
+    if (pontos == 28) {
+        mostra("Seu time esta com a pontuação igual ao ano passado, ja que seu time fez 28 na última temporada")
+    }
+
+
+
+
+</script>
