@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura Books</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<header class="cabecalho">
+    <div class="container">
+        <input type="checkbox" id="menu" class="container__botao">
+        <label for="menu">
+            <span class="cabecalho__menu_hamburger container__imagem"></span>
+        </label>
+
+        <ul class="lista-menu">
+            <li class="lista-menu__titulo"> Categorias</li>
+            <li class="lista-menu__item">
+                <a href="#" class="lista-menu__link">Programação</a>
+            </li>
+            <li class="lista-menu__item">
+                <a href="#" class="lista-menu__link">Front-end</a>
+            </li>
+            <li class="lista-menu__item">
+                <a href="#" class="lista-menu__link">Infraestrutura</a>
+            </li>
+            <li class="lista-menu__item">
+                <a href="#" class="lista-menu__link">Business</a>
+            </li>
+            <li class="lista-menu__item">
+                <a href="#" class="lista-menu__link">Desing & UX</a>
+            </li>
+        </ul>
+        <img src="assets/Logo.png" alt="Logo" class="container__imagem">
+    </div>
+    <div class="container">
+        <a href="#"><img src="assets/Favoritos.png" alt="Favoritos" class="container__imagem"> </a>
+        <a href="#"><img src="assets/Sacola.png" alt="Compras" class="container__imagem"></a>
+        <a href="#"><img src="assets/Usuario.png" alt="Perfil" class="container__imagem"></a>
+    </div>
+</header>
+<section class="banner">
+    <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+    <p class="banner__texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
+    <input type="search" class="banner__pesquisa" placeholder="Qual sera sua próxima leitura?">
+</section>
+
+<section class="carrosel">
+    <h2 class="carrosel__titulo">Novos lançamentos</h2>
+    <!-- Slider main container -->
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="/assets/UX.png" alt="Livro sobre UX do alura book"></div>
+            <div class=" swiper-slide"><img src="/assets/Guia Front-end.png"
+                    alt="Livro sobra Guia Front-end do alura book"></div>
+            <div class="swiper-slide"><img src="/assets/Nodejs.png" alt="Livro sobre Nodejs do alura book"></div>
+            <div class="swiper-slide"><img src="/assets/Portugol.png" alt="Livro sobre Portugol do alura book">
+            </div>
+            <div class="swiper-slide"><img src="/assets/Arquitetura.png"
+                    alt="Livro sobre Arquitetura de software do alura book">
+            </div>
+            <div class="swiper-slide"><img src="/assets/ReactNative.png" alt="Livro sobre ReactNative do alura book">
+            </div>
+
+
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+
+    </div>
+</section>
+
+<body>
+    <script type="module">
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js'
+
+        const swiper = new Swiper('.swiper', {
+            speed: 400,
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+        });</script>
+</body>
+
+</html>
